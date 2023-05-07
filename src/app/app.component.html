@@ -1,11 +1,7 @@
 <app-header></app-header>
 
 <div class="flex flex-wrap grid-cols-2 place-content-center">
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-
+  <app-card [dataEntrante]="cards" *ngFor='let cards of arreglotarjetas'></app-card>
 
 </div>
 <app-bottom></app-bottom>

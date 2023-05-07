@@ -1,17 +1,17 @@
 <div class="flex font-sans rounded-xl border m-5 ">
     <div class="flex-none w-48 relative ">
-      <img [src]="img" alt="" class="rounded-xl absolute inset-0 w-full h-full object-cover" loading="lazy" />
+      <img [src]="dataEntrante.img" alt="" class="rounded-xl absolute inset-0 w-full h-full object-cover" loading="lazy" />
     </div>
     <form class="flex-auto p-6">
       <div class="flex flex-wrap">
         <h1 class="flex-auto text-lg font-semibold text-slate-900">
-          {{modelo}}
+          {{dataEntrante.modelo}}
         </h1>
         <div class="text-lg font-semibold text-slate-500">
-          ${{precio}}
+          ${{dataEntrante.precio}}
         </div>
         <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
-          {{year}}
+          {{dataEntrante.year}}
         </div>
       </div>
       
