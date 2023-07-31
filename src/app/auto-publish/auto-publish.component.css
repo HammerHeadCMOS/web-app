@@ -1,0 +1,31 @@
+/* Estilo monocromático para el formulario */
+body, input, select, button {
+    color: #333; /* Texto en tono oscuro */
+  }
+  
+  body {
+    background-color: #f8f8f8; /* Fondo gris claro */
+  }
+  
+  form {
+    background-color: #fff; /* Fondo blanco para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  h2 {
+    color: #555; /* Título en tono oscuro */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Botón azul */
+    border-color: #007bff; /* Borde del botón azul */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Cambio de color en el botón al pasar el cursor */
+    border-color: #0056b3;
+  }
+  
+  /* Puedes agregar más estilos según tus necesidades */

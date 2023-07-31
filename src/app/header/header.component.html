@@ -1,14 +1,18 @@
 <div class=" mx-3 my-6">
     <div class="max-h-24 border  flex flex-row bg-clip-content bg-zinc-900 text-lg text-center content-center text-white rounded-full">
-        <img class=" basis-1/5 flex-none w-48 relative mx-3 my-3 rounded-full " [src]="logo">
-        <button class=" basis-1/5 rounded-full hover:bg-zinc-700">Automoviles</button>
-        <button class=" basis-1/5 rounded-full hover:bg-zinc-700">Camiones</button>
-        <button class=" basis-1/5 rounded-full hover:bg-zinc-700">Motocicletas</button>
+        <img class=" basis-1/5 flex-none w-48 relative mx-3 my-3 rounded-full bg-white object-contain" [src]="logo">
+        <button class=" basis-1/5 rounded-full hover:bg-zinc-700" routerLink="/autos">Automoviles</button>
+        <button class=" basis-1/5 rounded-full hover:bg-zinc-700" routerLink="/camiones">Camiones</button>
+        <button class=" basis-1/5 rounded-full hover:bg-zinc-700" routerLink="/motos">Motocicletas</button>
         <div class="basis-1/5 flex place-content-center content-center">
             <form class="flex place-content-center">
-                <input type="text" class=" rounded-full bg-white text-black text-center mx-3 my-4">
-                <input type="image" class="h-9 flex my-auto mr-auto" [src]="imgsearch">
+                <i class="material-icons h-9 flex my-auto mr-auto absolute right-0 text-gray-400">search</i>
+                <input type="text" class=" rounded-full bg-white text-black w-64 text-center mx-3 my-4 pl-4 pr-10"> 
             </form>
+        </div>
+        <div class="basis-1/6 flex place-content-center content-center">
+            <button class="rounded-full hover:bg-zinc-700 mx-2 py-3"><i class="material-icons">account_circle</i></button>
+            <button class="rounded-full hover:bg-zinc-700 mx-2"><i class="material-icons">directions_car</i></button>
         </div>
     </div>
 </div>

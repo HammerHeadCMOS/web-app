@@ -10,7 +10,7 @@
         <div class="text-lg font-semibold text-slate-500">
           ${{dataEntrante.precio}}
         </div>
-        <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+        <div class="w-full flex-none text-sm font-medium text-slate-700 my-2">
           {{dataEntrante.year}}
         </div>
       </div>
@@ -18,21 +18,35 @@
       <div class="flex space-x-4 mb-6 text-sm font-medium">
         <div class="flex-auto flex space-x-4">
           <button class="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
-            Comprar
-          </button>
-          <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
             Detalles
           </button>
-        </div>
-        <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200" type="button" aria-label="Like">
+          <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200" type="button" aria-label="Like">
           <svg width="20" height="20" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
           </svg>
         </button>
+        </div>
+        
       </div>
-      <p class="text-sm text-slate-700">
-        Disponible.
-      </p>
+      <div class="text-xs text-slate-700">
+        <div class="text-xs flex">
+          <span class="material-icons text-sm">
+            favorite
+            </span>
+          <p class="ml-1">a 400 personas les interesa este auto
+          </p>  
+        </div>
+        <div class="text-xs flex">
+          <span class="material-icons text-sm">
+            <span class="material-icons">
+              visibility
+              </span>
+            </span>
+          <p class="ml-1">600 personas han visto este auto
+          </p>  
+        </div>
+
+      </div>
     </form>
   </div>
   

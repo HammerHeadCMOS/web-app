@@ -1,0 +1,72 @@
+<div class="container">
+    <h2 class="mb-4">Formulario de Registro</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <form (ngSubmit)="submitForm()">
+          <div class="form-group">
+            <label for="tipo">Tipo:</label>
+            <select class="form-control" id="tipo" name="tipo" [(ngModel)]="formData.tipo">
+              <option value="Camion">Camión</option>
+              <option value="Automovil">Automóvil</option>
+              <option value="Moto">Moto</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="precio">Precio:</label>
+            <input type="text" class="form-control" id="precio" name="precio" [(ngModel)]="formData.precio">
+          </div>
+          <div class="form-group">
+            <label for="modelo">Modelo:</label>
+            <input type="text" class="form-control" id="modelo" name="modelo" [(ngModel)]="formData.modelo">
+          </div>
+          <div class="form-group">
+            <label for="marca">Marca:</label>
+            <input type="text" class="form-control" id="marca" name="marca" [(ngModel)]="formData.marca">
+          </div>
+          <div class="form-group">
+            <label for="año">Año:</label>
+            <input type="text" class="form-control" id="año" name="año" [(ngModel)]="formData.year">
+          </div>
+          <div class="form-group">
+            <label for="placa">Placa:</label>
+            <input type="text" class="form-control" id="placa" name="placa" [(ngModel)]="formData.placa">
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="cilindraje">Cilindraje:</label>
+          <input type="text" class="form-control" id="cilindraje" name="cilindraje" [(ngModel)]="formData.cilindraje">
+        </div>
+        <div class="form-group">
+          <label for="impronta">Impronta:</label>
+          <input type="text" class="form-control" id="impronta" name="impronta" [(ngModel)]="formData.impronta">
+        </div>
+        <div class="form-group">
+          <label for="transmision">Transmisión:</label>
+          <input type="text" class="form-control" id="transmision" name="transmision" [(ngModel)]="formData.transmision">
+        </div>
+        <div class="form-group">
+          <label for="asientos">Asientos:</label>
+          <input type="text" class="form-control" id="asientos" name="asientos" [(ngModel)]="formData.asientos">
+        </div>
+        <div class="form-group">
+          <label for="capacidadCarga">Capacidad de Carga:</label>
+          <input type="text" class="form-control" id="capacidadCarga" name="capacidadCarga" [(ngModel)]="formData.capacidadCarga">
+        </div>
+        <div class="form-group">
+          <label for="dimensiones">Dimensiones:</label>
+          <input type="text" class="form-control" id="dimensiones" name="dimensiones" [(ngModel)]="formData.dimensiones">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="imagenes">Imágenes (separadas por comas):</label>
+          <input type="text" class="form-control" id="imagenes" name="imagenes" [(ngModel)]="formData.imagenes">
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+  </div>

@@ -1,0 +1,40 @@
+<div class="container mt-4">
+    <h2>Tabla CRUD</h2>
+  
+    <form>
+      <div class="form-group">
+        <label for="id">ID:</label>
+        <input type="text" name="id" id="id" class="form-control" [(ngModel)]="id">
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" class="form-control" [(ngModel)]="username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" class="form-control" [(ngModel)]="password">
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary" (click)="createUser()">Save</button>
+        <button type="button" class="btn btn-success" (click)="updateUser()">Update</button>
+        <button type="button" class="btn btn-danger" (click)="deleteUser()">Delete</button>
+      </div>
+    </form>
+  
+    <table class="table table-striped table-hover mt-3">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Password</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{user.id}}</td>
+          <td>{{user.username}}</td>
+          <td>{{user.password}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
